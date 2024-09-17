@@ -36,4 +36,11 @@ pipeline {
             }
         }
     }
+
+    post { 
+        always { 
+            archiveArtifacts artifacts: 'summary.html'
+
+        }
+    }
 }

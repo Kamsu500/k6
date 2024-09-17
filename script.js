@@ -8,3 +8,10 @@ export default function () {
   http.get('http://test.k6.io');
   sleep(1);
 }
+
+export function handleSummary(data) {
+  return {
+    "result.html": htmlReport(data),
+    stdout: textSummary(data, { indent: " ", enableColors: true }),
+  };
+}
