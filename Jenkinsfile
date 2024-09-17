@@ -7,7 +7,7 @@ pipeline {
     }
 
     parameters {
-        choice(name: 'CHOICE', choices: ['script.js', 'mycollection.js'], description: 'Choisir la collection')
+        choice(name: 'CHOICE', choices: ['script.js', 'posts_e2e.postman_collection.js'], description: 'Choisir la collection')
         string(name: 'TEMPS_STAGE_1', defaultValue: '1m', description: 'Choisir le temps stage 1')
         string(name: 'CHARGE_STAGE_1', defaultValue: '200', description: 'Choisir la charge stage 1')
         string(name: 'TEMPS_STAGE_2', defaultValue: '2m', description: 'Choisir le temps stage 2')
